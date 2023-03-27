@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" id="Html" class="--lock">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="完善規劃RWD排版，設計前端特殊互動效果，以及分享本站使用的API">
+    <meta name="keywords" content="BRUCE YU,BRUCE YU DESIGN,前端設計,html,css,JavaScript,API">
+    <meta name="Distribution" content="Taiwan">
+    <meta name="author" content="BRUCE YU">
+    <meta name="copyright" content="Copyright 2021 ©Bruce Yu Design 版權所有">
+    <meta name="google" content="notranslate">
+
+    <meta property="og:title" content="前端設計・BRUCE YU DESIGN">
+    <meta property="og:description" content="完善規劃RWD排版，設計前端特殊互動效果，以及分享本站使用的API">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="/image/favicon.svg">
+    <meta property="og:type" content="website">
+
+    <link rel="shortcut icon" href="/image/favicon.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/Meyerweb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/web_design.css">
+
+    <title>網頁設計</title>
+</head>
+
+<body>
+
+    <!-- Load ---------------------------------------- -->
+    <div id="Load" class="">
+        <svg class="load-img __imgresp __tran200ms" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 380">
+            <polygon class="load-path load-path-3 cls-4" points="307.939 128.941 274.837 49.025 251.289 49.025 296.165 157.365 307.939 128.941"/>
+            <polygon class="load-path load-path-4 cls-1" points="364.589 49.025 283.487 244.821 307.035 244.821 388.137 49.025 364.589 49.025"/>
+            <path class="load-path load-path-2 cls-3" d="M219.52943,174.18232a32.62627,32.62627,0,0,1-28.2929,48.885H120.87477l-9.01128,21.75512h79.373a54.401,54.401,0,0,0,47.15464-81.50568A76.05034,76.05034,0,0,1,219.52943,174.18232Z"/>
+            <path class="load-path load-path-1 cls-2" d="M192.95484,49.05052l-9.0012,21.73082h7.4278a32.63278,32.63278,0,0,1,0,65.26556H156.91971L147.90854,157.802h43.4729a54.38712,54.38712,0,0,0,1.5734-108.75149Z"/>
+            <g class="load-path load-path-t cls-2">
+                <path d="M42.79524,328.97676V296.15344h4.93245a21.57358,21.57358,0,0,1,5.251.51034,7.89168,7.89168,0,0,1,3.33709,1.72154,8.93515,8.93515,0,0,1,2.1896,3.12513,9.44977,9.44977,0,0,1,.82955,3.82661,7.75576,7.75576,0,0,1-2.7,5.974,7.93279,7.93279,0,0,1,4.12436,3.1245,9.25126,9.25126,0,0,1-1.191,11.65016,8.93038,8.93038,0,0,1-3.67773,2.27477,21.37909,21.37909,0,0,1-5.591.61632Zm4.95327-18.72869H49.301a5.71834,5.71834,0,0,0,4.0493-1.22255,4.74217,4.74217,0,0,0,1.28626-3.6033,4.5218,4.5218,0,0,0-1.31781-3.51877,5.49522,5.49522,0,0,0-3.82661-1.2011H47.74851Zm0,14.07317h3.06142a7.59722,7.59722,0,0,0,4.93245-1.31843,4.55635,4.55635,0,0,0,1.65782-3.614,4.62947,4.62947,0,0,0-1.5941-3.57112q-1.5528-1.4241-5.54878-1.42441H47.74851Z"/>
+                <path d="M81.83475,314.98875l10.162,13.988H85.93766l-9.37475-13.43541h-.89326v13.43541H70.71638V296.15344H76.52q6.50543,0,9.39684,2.44447a8.98234,8.98234,0,0,1,3.18884,7.18578,9.32792,9.32792,0,0,1-1.99847,5.99477A8.91031,8.91031,0,0,1,81.83475,314.98875Zm-6.1651-3.7629h1.57329q7.03627,0,7.0369-5.37845,0-5.03876-6.84513-5.03844H75.66965Z"/>
+                <path d="M103.57,296.15344v19.7702q0,4.23066,1.38214,6.18654a7.39213,7.39213,0,0,0,11.62871,0q1.38153-1.89155,1.38152-6.18654v-19.7702h4.95327v21.1309a11.82234,11.82234,0,0,1-3.2311,8.54584,12.49766,12.49766,0,0,1-17.83608,0,11.82281,11.82281,0,0,1-3.23174-8.54584v-21.1309Z"/>
+                <path d="M157.21445,297.91787v5.86735a13.73626,13.73626,0,0,0-8.88649-3.59258,11.31454,11.31454,0,0,0-8.5244,3.63484,12.25667,12.25667,0,0,0-3.4866,8.8436,11.96015,11.96015,0,0,0,3.4866,8.71617,11.514,11.514,0,0,0,8.54585,3.55031,10.48119,10.48119,0,0,0,4.44293-.85036,12.77616,12.77616,0,0,0,2.11517-1.14811,24.98156,24.98156,0,0,0,2.30694-1.743v5.974a17.89157,17.89157,0,0,1-8.92876,2.4022,16.47208,16.47208,0,0,1-12.011-4.911,16.2805,16.2805,0,0,1-4.95327-11.94728,16.85415,16.85415,0,0,1,4.14518-11.18209,16.50518,16.50518,0,0,1,13.20136-6.01622A16.75793,16.75793,0,0,1,157.21445,297.91787Z"/>
+                <path d="M183.75408,300.809H170.59434v7.88726h12.77682v4.65553H170.59434v10.96949h13.15974v4.65552h-18.113V296.15344h18.113Z"/>
+                <path d="M214.68112,314.797l-10.71464-18.64354h5.69765l7.50435,13.11621,7.52517-13.11621h5.69765L219.63439,314.797v14.17978h-4.95327Z"/>
+                <path d="M241.30528,296.15344v19.7702q0,4.23066,1.38215,6.18654a7.39213,7.39213,0,0,0,11.62871,0q1.38152-1.89155,1.38151-6.18654v-19.7702h4.95327v21.1309a11.82234,11.82234,0,0,1-3.2311,8.54584,12.49766,12.49766,0,0,1-17.83608,0,11.8228,11.8228,0,0,1-3.23173-8.54584v-21.1309Z"/>
+                <path d="M286.3055,328.97676V296.15344h6.888a25.077,25.077,0,0,1,7.82355.97779,14.6529,14.6529,0,0,1,5.591,3.25256,16.97368,16.97368,0,0,1-.21259,24.42634,15.45572,15.45572,0,0,1-5.57022,3.25256,25.35024,25.35024,0,0,1-7.71694.91407Zm4.95327-4.65552h2.2325a18.63784,18.63784,0,0,0,5.54878-.70148,11.26737,11.26737,0,0,0,7.65259-11.05466,11.40363,11.40363,0,0,0-3.614-8.75843q-3.25224-2.9977-9.58735-2.99771h-2.2325Z"/>
+                <path d="M338.207,300.809H325.04726v7.88726h12.77681v4.65553H325.04726v10.96949H338.207v4.65552H320.094V296.15344h18.113Z"/>
+                <path d="M365.44747,301.043l-4.01776,2.38075a6.90321,6.90321,0,0,0-2.14734-2.55107,5.00731,5.00731,0,0,0-2.74222-.68,5.06844,5.06844,0,0,0-3.42288,1.16893,3.62344,3.62344,0,0,0-1.36007,2.89109q0,2.40252,3.57113,3.86951l3.274,1.33925a13.97408,13.97408,0,0,1,5.84589,3.94332,8.88637,8.88637,0,0,1,1.84959,5.70774,10.02937,10.02937,0,0,1-3.01852,7.48353,10.3632,10.3632,0,0,1-7.54661,2.97625,10.09542,10.09542,0,0,1-7.05835-2.53025,11.64324,11.64324,0,0,1-3.42225-7.12144l5.017-1.10521a8.52609,8.52609,0,0,0,1.19037,3.9963,5.65661,5.65661,0,0,0,8.31181.57406,5.36764,5.36764,0,0,0,1.531-3.93259,5.5384,5.5384,0,0,0-.26558-1.75434,4.47307,4.47307,0,0,0-.82954-1.46668,6.62616,6.62616,0,0,0-1.456-1.25409,13.99561,13.99561,0,0,0-2.12589-1.11593l-3.1674-1.31844q-6.7401-2.84819-6.73915-8.33325a7.90733,7.90733,0,0,1,2.82738-6.18655,10.21771,10.21771,0,0,1,7.03627-2.50818Q362.25894,295.51567,365.44747,301.043Z"/>
+                <path d="M379.402,296.15344v32.82332h-4.95327V296.15344Z"/>
+                <path d="M406.3454,311.88444h13.56283v1.08439a22.41064,22.41064,0,0,1-.87117,6.548,13.92025,13.92025,0,0,1-2.87028,4.93183,14.86813,14.86813,0,0,1-11.62808,5.14441,15.98633,15.98633,0,0,1-11.799-4.97409,17.134,17.134,0,0,1,19.43081-27.53066,20.73489,20.73489,0,0,1,6.27107,5.10215l-3.52886,3.38062q-4.03952-5.37846-9.84283-5.37846a11.75873,11.75873,0,0,0-8.73762,3.59258,11.997,11.997,0,0,0-3.52886,8.8436,12.3334,12.3334,0,0,0,11.905,12.33019,9.89781,9.89781,0,0,0,6.56882-2.46591,8.77276,8.77276,0,0,0,3.25256-5.95251H406.3454Z"/>
+                <path d="M428.314,328.97676V293.92094l23.93745,25.04266V296.15344h4.95327v34.82179l-23.93745-24.979v22.98049Z"/>
+            </g>
+        </svg>
+    </div>
+
+    <!-- Header ---------------------------------------- -->
+    <header id="Header" class="__container">
+        <div class="header-head">
+            <a href="/index.html">
+
+                <!-- Logo ---------------------------------------- -->
+                <svg class="header-logo __tran300ms __imgresp" alt="Bruce Yu Design" height="60" width="285" viewBox="0 0 950 200">
+                    <path class="cls-2" d="M241.08656,127.16543V73.21922h8.10665a35.45643,35.45643,0,0,1,8.63023.83876,12.97006,12.97006,0,0,1,5.48462,2.8294,14.68537,14.68537,0,0,1,3.59869,5.13625,15.531,15.531,0,0,1,1.36338,6.28917,12.74683,12.74683,0,0,1-4.43746,9.81839,13.03783,13.03783,0,0,1,6.77853,5.13521,15.20474,15.20474,0,0,1-1.95746,19.14742,14.6773,14.6773,0,0,1-6.04448,3.73867,35.13739,35.13739,0,0,1-9.18906,1.01294Zm8.14087-30.78123H251.779q4.54115,0,6.65515-2.0093a7.79386,7.79386,0,0,0,2.114-5.92214,7.43172,7.43172,0,0,0-2.16585-5.78321q-2.16636-1.97352-6.28916-1.974h-2.86568Zm0,23.12973H254.259q5.5209,0,8.10666-2.16689a7.48848,7.48848,0,0,0,2.72468-5.93977,7.60865,7.60865,0,0,0-2.62-5.86926q-2.55205-2.34056-9.11959-2.34107h-4.12331Z"/>
+                    <path class="cls-2" d="M305.24929,104.17567l16.70163,22.98976h-9.95836L296.58484,105.0839h-1.46809v22.08153h-8.14087V73.21922h9.53846q10.69188,0,15.444,4.01756a14.76276,14.76276,0,0,1,5.241,11.81006,15.33074,15.33074,0,0,1-3.28455,9.85261A14.64438,14.64438,0,0,1,305.24929,104.17567Zm-10.13254-6.18445h2.58575q11.56434,0,11.56538-8.83966,0-8.28135-11.2502-8.28084h-2.90093Z"/>
+                    <path class="cls-2" d="M340.97185,73.21922v32.493q0,6.95322,2.27161,10.16779a12.14922,12.14922,0,0,0,19.11217,0q2.27057-3.10881,2.27056-10.16779v-32.493h8.14087v34.72932a19.43043,19.43043,0,0,1-5.31043,14.04538,20.5403,20.5403,0,0,1-29.31418,0,19.43118,19.43118,0,0,1-5.31147-14.04538V73.21922Z"/>
+                    <path class="cls-2" d="M429.13832,76.11912v9.64317q-7.059-5.905-14.60525-5.90451a18.59578,18.59578,0,0,0-14.01013,5.974,20.14421,20.14421,0,0,0-5.73033,14.53474,19.65693,19.65693,0,0,0,5.73033,14.32532,18.92359,18.92359,0,0,0,14.04538,5.835,17.22634,17.22634,0,0,0,7.30211-1.39759,20.99868,20.99868,0,0,0,3.47635-1.887,41.05791,41.05791,0,0,0,3.79154-2.86465v9.81839a29.40542,29.40542,0,0,1-14.67471,3.9481,27.07241,27.07241,0,0,1-19.74047-8.07141,26.75749,26.75749,0,0,1-8.14086-19.63574A27.70035,27.70035,0,0,1,393.395,82.05888,27.12681,27.12681,0,0,1,415.0919,72.171,27.5421,27.5421,0,0,1,429.13832,76.11912Z"/>
+                    <path class="cls-2" d="M472.75707,80.87072H451.12862v12.963h20.99912v7.6515H451.12862v18.02873h21.62845v7.6515H442.98775V73.21922h29.76932Z"/>
+                    <path class="cls-2" d="M523.58669,103.86048,505.97683,73.21922h9.36428l12.33364,21.55692,12.36786-21.55692h9.36428l-17.67933,30.64126v23.305h-8.14087Z"/>
+                    <path class="cls-2" d="M567.34438,73.21922v32.493q0,6.95322,2.2716,10.16779a12.14922,12.14922,0,0,0,19.11217,0q2.27056-3.10881,2.27057-10.16779v-32.493h8.14087v34.72932a19.43039,19.43039,0,0,1-5.31044,14.04538,20.54029,20.54029,0,0,1-29.31417,0,19.43113,19.43113,0,0,1-5.31147-14.04538V73.21922Z"/>
+                    <path class="cls-2" d="M641.30372,127.16543V73.21922h11.3207q8.14139,0,12.85826,1.607a24.0827,24.0827,0,0,1,9.18906,5.34569q8.34978,7.61728,8.3503,20.02039,0,12.43836-8.6997,20.12512a25.402,25.402,0,0,1-9.15484,5.34568q-4.47271,1.50231-12.683,1.50231Zm8.14087-7.6515h3.6692a30.63159,30.63159,0,0,0,9.11959-1.15291,18.51825,18.51825,0,0,0,12.57729-18.1687q0-8.87386-5.93976-14.39477-5.34518-4.92682-15.75712-4.92683h-3.6692Z"/>
+                    <path class="cls-2" d="M726.60554,80.87072H704.97709v12.963h20.99912v7.6515H704.97709v18.02873h21.62845v7.6515H696.83622V73.21922h29.76932Z"/>
+                    <path class="cls-2" d="M771.37617,81.25537l-6.60331,3.91284a11.34563,11.34563,0,0,0-3.52923-4.19277,8.22976,8.22976,0,0,0-4.50692-1.11766,8.33009,8.33009,0,0,0-5.62562,1.92117,5.95525,5.95525,0,0,0-2.23532,4.7516q0,3.94861,5.86926,6.35967l5.38094,2.2011q6.56754,2.6547,9.60792,6.481a14.605,14.605,0,0,1,3.03987,9.38087,16.48363,16.48363,0,0,1-4.961,12.29943,17.03229,17.03229,0,0,1-12.4031,4.89157A16.59213,16.59213,0,0,1,743.809,123.9856q-4.50692-4.157-5.62458-11.70432l8.24559-1.81645q.5583,4.75108,1.95642,6.56806a9.29683,9.29683,0,0,0,13.66073.94348,8.82191,8.82191,0,0,0,2.51629-6.46335,9.10248,9.10248,0,0,0-.43649-2.88331,7.35151,7.35151,0,0,0-1.36338-2.41053,10.88938,10.88938,0,0,0-2.39291-2.06114,23.00344,23.00344,0,0,0-3.494-1.83408l-5.20572-2.16689q-11.07756-4.6811-11.076-13.696a12.99594,12.99594,0,0,1,4.64689-10.16779A16.79314,16.79314,0,0,1,756.80617,72.171Q766.13572,72.171,771.37617,81.25537Z"/>
+                    <path class="cls-2" d="M794.311,73.21922v53.94621h-8.14087V73.21922Z"/>
+                    <path class="cls-2" d="M838.59328,99.07363h22.291v1.78224a36.83243,36.83243,0,0,1-1.4318,10.76187,22.87823,22.87823,0,0,1-4.7174,8.10562,24.4363,24.4363,0,0,1-19.11113,8.455,26.274,26.274,0,0,1-19.3921-8.17508,28.17744,28.17744,0,0,1,.14-39.62193A28.37472,28.37472,0,0,1,848.167,74.75574a34.07844,34.07844,0,0,1,10.30672,8.38555l-5.7998,5.55615q-6.63908-8.83965-16.177-8.83966a19.32586,19.32586,0,0,0-14.36057,5.90451,19.71749,19.71749,0,0,0-5.79979,14.53475,19.11911,19.11911,0,0,0,6.46438,14.84889q6.04344,5.41671,13.1019,5.41619a16.26738,16.26738,0,0,0,10.79608-4.05281,14.41832,14.41832,0,0,0,5.34569-9.78314h-13.4513Z"/>
+                    <path class="cls-2" d="M874.69945,127.16543V69.55l39.342,41.15846V73.21922h8.14087V130.45l-39.342-41.05374v37.76919Z"/>
+                    <polygon class="cls-4" points="159.435 87.754 137.215 33.333 121.409 33.333 151.532 107.111 159.435 87.754"/>
+                    <polygon class="cls-1" points="197.462 33.333 143.022 166.666 158.829 166.666 213.269 33.333 197.462 33.333"/>
+                    <path class="cls-3" d="M100.08958,118.56249a22.35675,22.35675,0,0,1,2.91312,11.06745,22.06527,22.06527,0,0,1-21.905,22.222H33.86659l-6.04891,14.81469h53.28c20.16291,0,36.50839-16.582,36.50839-37.03673a37.276,37.276,0,0,0-4.85533-18.4666A50.87489,50.87489,0,0,1,100.08958,118.56249Z"/>
+                    <path class="cls-2" d="M82.25111,33.35087,76.209,48.149h4.986a22.2244,22.2244,0,0,1,0,44.44421H58.06214L52.0133,107.40791H81.195c20.163,0,36.50838-16.582,36.50838-37.03672C117.70333,50.27479,101.92556,33.918,82.25111,33.35087Z"/>
+                </svg>
+                <p class="__hide">首頁</p>
+            </a>
+        </div>
+        <nav class="header-body">
+
+            <!-- Burger ---------------------------------------- -->
+            <button id="BtnBurger" class="" aria-label="burger">
+                <span class="burger-1 __tran200ms"></span>
+                <span class="burger-2 __tran200ms"></span>
+                <span class="burger-3 __tran200ms"></span>
+                <span class="burger-4 __tran200ms"></span>
+            </button>
+
+            <!-- List ---------------------------------------- -->
+            <ul id="NaviLs" class="navi-ls __tran300ms">
+                <li class="navi-li">
+                    <button class="header-btn __tran200ms" onclick="clickScroll( 'Base1' )">RWD設計</button>
+                </li>
+                <li class="navi-li">
+                    <button class="header-btn __tran200ms" onclick="clickScroll( 'Base2' )">CSS動畫</button>
+                </li>
+                <li class="navi-li">
+                    <button class="header-btn __tran200ms" onclick="clickScroll( 'Base3' )">互動效果</button>
+                </li>
+                <li class="navi-li">
+                    <button class="header-btn __tran200ms" onclick="clickScroll( 'Base4' )">學習進度</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banr ---------------------------------------- -->
+    <div id="Banr" class="__container">
+        <div class="banr-head">
+            <h1 class="banr-webname">BRUCE YU DESIGN</h1>
+            <h2 class="banr-title">網頁設計</h2>
+            <p class="banr-desc">創造美好，杜絕醜陋，<br>醜人請勿作怪。</p>
+            <button id="BtnMore" class="banr-btn __tran200ms">
+                <i class="fas fa-chevron-circle-down"></i>
+                觀看更多
+            </button>
+        </div>
+        <div class="banr-body">
+            <img id="BanrImg1" class="banr-img __imgresp" width="674" height="597" src="/image/frontend/banr-main.png" alt="前端設計Banner">
+            <img id="BanrImg2" class="banr-img __imgresp __tran300ms banr-img-ani --load --hide" width="343" height="245" src="/image/frontend/banr-obj1.png" alt="Banner小圖1">
+            <img id="BanrImg3" class="banr-img __imgresp __tran300ms banr-img-ani --load --hide" width="291" height="288" src="/image/frontend/banr-obj2.png" alt="Banner小圖2">
+            <img id="BanrImg4" class="banr-img __imgresp __tran300ms banr-img-ani --load --hide" width="250" height="193" src="/image/frontend/banr-obj3.png" alt="Banner小圖3">
+        </div>
+    </div>
+
+    <!-- Base1 ---------------------------------------- -->
+    <div id="Base1" class="base base-col __container">
+        <div class="base-head">
+            <h3 class="base-title">
+                RWD設計
+            </h3>
+            <hr class="base-divi">
+            <p class="base-desc">
+                只想寫code，不想寫文案，只想寫code，不想寫文案。<br>
+                只想寫code，不想寫文案，只想寫code，不想寫文案，只想寫code，不想寫文案。
+            </p>
+        </div>
+        <div class="base-body">
+
+            <!-- RWD Picture -->
+            <picture>
+                <source srcset="/image/frontend/Frontend1_w768.png" width="538" height="492" media="(max-width: 768px)">
+                <img src="/image/frontend/Frontend1.png" width="1226" height="439" alt="響應式設計" class="__imgresp">
+            </picture>
+        </div>
+    </div>
+
+    <!-- Base2 ---------------------------------------- -->
+    <div id="Base2" class="base base-row __container">
+        <div class="base-head base-head-border">
+            <h3 class="base-title">
+                CSS動畫
+            </h3>
+            <hr class="base-divi">
+            <p class="base-desc">
+                只想寫code，不想寫文案，只想寫code，不想寫文案，只想寫code，不想寫文案，只想寫code，不想寫文案，只想寫code，不想寫文案。
+            </p>
+        </div>
+        <div class="base-body">
+
+            <!-- Animate ---------------------------------------- -->
+            <div class="animate">
+
+                <!-- AnimateImg ---------------------------------------- -->
+                <div class="animate-head __rad12px">
+
+                    <svg id="AnimateImg" class="--sunrise" viewBox="0 0 1377.51952 858.48984">
+                        <rect class="ani-sky" x="-0.24024" y="-0.25508" width="1378" height="859"/>
+                        <polygon class="ani-glow" points="358.27 858.745 -0.24 858.745 -0.24 -0.255 39.594 -0.255 358.27 858.745"/>
+                        <polygon class="ani-glow" points="507.392 858.745 -0.24 858.745 -0.24 -0.255 188.717 -0.255 507.392 858.745"/>
+                        <polygon class="ani-glow" points="656.515 858.745 -0.24 858.745 -0.24 -0.255 337.839 -0.255 656.515 858.745"/>
+                        <polygon class="ani-glow" points="805.637 858.745 -0.24 858.745 -0.24 -0.255 486.962 -0.255 805.637 858.745"/>
+                        <polygon class="ani-glow" points="954.76 858.745 -0.24 858.745 -0.24 -0.255 636.084 -0.255 954.76 858.745"/>
+                        <circle class="ani-corona" cx="695" cy="183" r="250"/>
+                        <circle class="ani-corona" cx="695" cy="183" r="180"/>
+                        <circle class="ani-dawn" cx="1200" cy="470" r="300"/>
+                        <circle class="ani-dawn" cx="1200" cy="470" r="550"/>
+                        <circle class="ani-star" cx="853.75976" cy="118.74492" r="5"/>
+                        <circle class="ani-star" cx="995.75976" cy="165.74492" r="5"/>
+                        <circle class="ani-star" cx="745.75976" cy="228.74492" r="5"/>
+                        <circle class="ani-star" cx="1320.75976" cy="243.74492" r="5"/>
+                        <circle class="ani-star" cx="1164.75976" cy="75.74492" r="5"/>
+                        <circle class="ani-star" cx="228.75976" cy="195.74492" r="5"/>
+                        <circle class="ani-star" cx="133.75976" cy="38.74492" r="5"/>
+                        <circle class="ani-star" cx="313.75976" cy="98.74492" r="5"/>
+                        <circle class="ani-star" cx="375.75976" cy="370.74492" r="5"/>
+                        <circle class="ani-star" cx="58.75976" cy="314.74492" r="5"/>
+                        <g class="ani-rotate">
+                            <circle class="ani-sun" cx="695" cy="183" r="93"/>
+                            <path class="ani-moon" d="M630.27953,1306.55351a92.301,92.301,0,0,1,65.3418,157.49366,92.307,92.307,0,1,0-79.68359-156.38282A92.98238,92.98238,0,0,1,630.27953,1306.55351Z"/>
+                        </g>
+                        <path class="ani-mount3" d="M-.24024,643.74492,221.16143,501.51837a148.04449,148.04449,0,0,1,116.45681-7.60164l188.43385,66.64863a150.65325,150.65325,0,0,0,121.34632-9.2162L910.096,410.698a69.15689,69.15689,0,0,1,63.74355-.80106L1198.908,523.21817a47.1056,47.1056,0,0,0,52.79847-7.15283l126.05328-106.32042v449h-1378Z"/>
+                        <path class="ani-mount2" d="M1377.75976,655.56345l-213-55.41312c-36.14048-12.73841-86.63626-3.72058-124.85848,5.65247L851.46743,652.01153c-39.94511,9.79554-83.9932,7.47609-121.34632-6.38976L467.42352,565.42235A96.821,96.821,0,0,0,403.68,564.867L194.75976,624.74492c-30,10-60,15-95,4.26641l-100-28.861V858.74492h1378Z"/>
+                        <rect class="ani-lake" x="629.75976" y="739.74492" width="747.75976" height="118.74492"/>
+                        <path class="ani-mount1" d="M1377.75976,826.26534l-635-81.52042c-215-25-320-75-540-25L0,755.74492l-.24024,103h1378Z"/>
+                        <path class="ani-cloud" d="M301.78261,294.31014a45.14112,45.14112,0,0,0-14.35122,2.33908,52.0173,52.0173,0,0,0-73.78544-37.893A76.87583,76.87583,0,0,0,72.8832,282.70039,51.99852,51.99852,0,0,0,87,384.74492H301.78261a45.21739,45.21739,0,1,0,0-90.43478Z"/>
+                        <path class="ani-cloud" d="M725,184.74491a40.0523,40.0523,0,0,1,10.16327,1.30658,44.99045,44.99045,0,0,1,81.02094-23.05627A42.51261,42.51261,0,0,1,875,202.24492c0,.84051-.03106,1.67352-.07922,2.502.02655-.00006.05267-.002.07922-.002a30,30,0,1,1,0,60H725a40,40,0,0,1,0-80Z"/>
+                    </svg>
+
+                </div>
+
+                <!-- AnimateBtn ---------------------------------------- -->
+                <div class="animate-body">
+                    <div id="AnimateThumb" class="__rad4px __tran200ms"></div>
+                    <button value="--sunrise" data-ani-loc="12px" aria-label="日出" class="animate-btn __tran200ms --click">日出</button>
+                    <button value="--midday" data-ani-loc="84px" aria-label="正午" class="animate-btn __tran200ms">正午</button>
+                    <button value="--sunset" data-ani-loc="156px" aria-label="日落" class="animate-btn __tran200ms">日落</button>
+                    <button value="--night" data-ani-loc="228px" aria-label="夜晚" class="animate-btn __tran200ms">夜晚</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Base3 ---------------------------------------- -->
+    <div id="Base3" class="base base-col __container">
+        <div class="base-head">
+            <h3 class="base-title">
+                互動效果
+            </h3>
+            <hr class="base-divi">
+            <p class="base-desc">
+                只想寫code，不想寫文案，只想寫code，不想寫文案。<br>
+                只想寫code，不想寫文案，只想寫code，不想寫文案，只想寫code，不想寫文案。
+            </p>
+            <a class="base-btn __tran300ms" href="https://iro.js.org/" target="_blank" rel="noreferrer noopener">
+                <i class="fas fa-link"></i>
+                套件: iro.js
+            </a>
+        </div>
+        <div class="base-body">
+
+            <!-- Paint ---------------------------------------- -->
+            <div id="Paint" class="">
+                <div class="paint-head">
+                    <div class="paint-box">
+
+                        <!-- PaintImg ---------------------------------------- -->
+                        <svg id="PaintImg" class="__rad12px __imgresp" width="552" height="344" viewBox="0 0 1377.51952 858.48984">
+                            <defs><style>.paint-b, .paint-g, .paint-o, .paint-p, .paint-q, .paint-r, .paint-s, .paint-t, .paint-u, .paint-v{ fill: #fff;}.paint-b{ opacity: 0.07;}.paint-l{ opacity: 0.15;}.paint-n{ opacity: 0.45;}.paint-o{ opacity: 0.8;}.paint-p{ opacity: 0.6;}.paint-q{ opacity: 0.75;}.paint-r{ opacity: 0.35;}.paint-s{ opacity: 0.7;}.paint-t{ opacity: 0.2;}.paint-u{ opacity: 0.5;}.paint-v{ opacity: 0.9;}.paint-w{opacity:0.4;fill:url(#Paint-w);}</style></defs>
+                            <rect class="paint-a" x="-88.89929" y="512.63868" width="1555.3181" height="396.22733"/>
+                            <rect id="PaintImgWave1" class="paint-b" x="-88.89929" y="486.7494" width="1555.3181" height="259.73331" />
+                            <rect id="PaintImgWave2" class="paint-b" x="-88.89929" y="486.7494" width="1555.3181" height="181.4938" /><rect class="paint-c" x="-88.89929" y="-83.26303" width="1555.3181" height="672.91241" /><rect class="paint-d" x="-88.89929" y="818.74492" width="1555.3181" height="119.55217" /><g class="paint-e"><path d="M482.14355,512.63868a45.13086,45.13086,0,0,0-44.78116-51.19784,44.97245,44.97245,0,0,0-23.64766,6.67986c-7.48479-31.18582-39.88908-54.64722-78.73023-54.64722-32.63643,0-60.72793,16.56555-73.31005,40.35912-7.11552-8.17321-16.40327-13.13277-26.57319-13.13277-17.971,0-33.201,15.45688-38.50963,36.85073-11.72424-10.27992-27.07047-13.38293-38.91881-6.54208-9.36673,5.4078-14.44366,15.81595-14.658,27.49452a66.58162,66.58162,0,0,0-23.96356-4.27016c-19.50367,0-36.1213,7.66574-42.45315,18.40584Z" /><path d="M689.12438,303.42457c5.2752-9.56445,19.94345-16.44811,37.22586-16.44811a59.24609,59.24609,0,0,1,18.853,2.96779c4.41094-22.00446,37.19082-39.09971,76.9958-39.09971a132.34025,132.34025,0,0,1,23.22253,2.01843c8.75089-29.65387,39.45045-49.57942,72.81787-45.63566,21.56228,2.54844,39.42724,14.50175,49.569,30.94a38.31813,38.31813,0,0,1,17.76028-9.445c24.46407-5.52031,50.33126,13.69181,58.00945,42.96688a53.85945,53.85945,0,0,1,30.71867-9.23048c26.08882,0,47.23786,17.17226,47.23786,38.3554,0,.87837-.0496,1.74687-.12106,2.61044Z" /></g><path class="paint-f" d="M688.75959,188.926c-15.33367,0-27.76376,13.969-27.76376,31.20075v49.52346h55.52786V220.12679C716.52369,202.89508,704.09326,188.926,688.75959,188.926Z" /><path class="paint-g" d="M689.176,205.1684c-4.56747,0-8.27,11.15835-8.27,24.92291v39.55894h16.5402V230.09131C697.44612,216.32675,693.74344,205.1684,689.176,205.1684Z" /><path class="paint-h" d="M749.44378,194.03824V183.72593h-3.173v-8.72581h-6.70045l-49.42236-35.107V112.333h-2.77639v27.56015l-49.42235,35.107h-6.70045v8.72581h-3.173v10.31231H635.81V199.591h-5.94942v7.1393H635.81v38.07625h-4.56122v30.937h115.022v-30.937h-4.56122V206.73033H747.659V199.591h-5.94942v-5.55279Zm-92.21592,0H684.9918V199.591H657.22786Zm27.76394,12.69209v38.07625H657.22786V206.73033Zm7.53592,0h27.76393v38.07625H692.52772Zm0-7.1393v-5.55279h27.76393V199.591Zm-37.67962-5.55279V199.591H640.56951v-5.55279Zm-14.27859,12.69209H654.8481v38.07625H640.56951Zm82.10191,38.07625V206.73033H736.95v38.07625ZM736.95,199.591H722.67142v-5.55279H736.95Z" /><rect x="708.59114" y="317.78605" width="15.8651" height="26.17742" /><rect x="718.1102" y="511.34032" width="15.8651" height="26.17742" /><polygon class="paint-i" points="617.125 768.355 760.394 768.355 755.351 680.304 622.168 680.304 617.125 768.355" /><polygon class="paint-i" points="738.724 389.972 733.182 293.195 644.337 293.195 638.795 389.972 738.724 389.972" /><polygon class="paint-i" points="633.253 486.749 627.71 583.527 749.809 583.527 744.267 486.749 633.253 486.749" /><rect class="paint-j" x="627.67911" y="275.74353" width="122.1613" height="17.45161" /><polygon class="paint-j" points="633.253 486.749 744.267 486.749 738.724 389.972 638.795 389.972 633.253 486.749" /><polygon class="paint-j" points="627.71 583.527 622.168 680.304 755.351 680.304 749.809 583.527 627.71 583.527" /><rect class="paint-k" x="708.19451" y="317.78605" width="15.8651" height="26.17742" /><rect class="paint-k" x="717.71357" y="511.34032" width="15.8651" height="26.17742" /><rect class="paint-k" x="653.4599" y="414.56318" width="15.8651" height="26.17742" transform="translate(1322.78491 855.30379) rotate(-180)" /><rect class="paint-k" x="643.94084" y="608.11745" width="15.8651" height="26.17742" transform="translate(1303.74678 1242.41232) rotate(-180)" /><rect class="paint-k" x="669.72163" y="666.02508" width="38.07625" height="102.32992" /><polygon class="paint-l" points="733.182 293.195 749.841 293.195 749.841 275.744 706.211 275.744 706.211 768.355 707.798 768.355 760.394 768.355 733.182 293.195" /><polygon class="paint-m" points="435.082 818.745 921.082 818.745 895.822 769.455 844.629 737.266 749.716 752.856 622.317 733.745 484.854 758.893 441.244 787.059 435.082 818.745" /><g class="paint-n"><polygon class="paint-o" points="441.244 787.059 473.951 793.597 435.082 818.745 441.244 787.059" /><polygon class="paint-p" points="499.073 818.745 473.951 793.597 435.082 818.745 499.073 818.745" /><polygon class="paint-q" points="484.854 758.893 473.951 793.597 499.073 818.745 484.854 758.893" /><polygon class="paint-r" points="551.924 776.245 499.073 818.745 607.979 818.745 611.983 802.902 600.039 771.467 551.924 776.245" /><polygon class="paint-p" points="484.854 758.893 551.924 776.245 499.073 818.745 484.854 758.893" /><polygon class="paint-s" points="622.317 733.745 600.039 771.467 611.983 802.902 622.317 733.745" /><polygon class="paint-t" points="676.845 776.245 611.983 802.902 607.979 818.745 711.279 818.745 726.126 777.502 676.845 776.245" /><polygon class="paint-r" points="622.317 733.745 676.845 776.245 611.983 802.902 622.317 733.745" /><polygon class="paint-r" points="749.716 752.856 726.126 777.502 711.279 818.745 774.006 818.745 749.716 752.856" /><polygon class="paint-t" points="810.5 766.437 766.799 799.196 774.006 818.745 831.395 818.745 810.5 766.437" /><polygon class="paint-p" points="749.716 752.856 810.5 766.437 766.799 799.196 749.716 752.856" /><polygon class="paint-s" points="844.629 737.266 810.5 766.437 831.395 818.745 844.629 737.266" /><path class="paint-u" d="M886.91578,785.80064l-55.5205,32.94428h89.687Z" /><polygon class="paint-o" points="844.629 737.266 886.916 785.801 831.395 818.745 844.629 737.266" /><polygon class="paint-s" points="895.822 769.455 886.916 785.801 921.082 818.745 895.822 769.455" /><polygon class="paint-o" points="484.854 758.893 622.317 733.745 600.039 771.467 551.924 776.245 484.854 758.893" /><polygon class="paint-p" points="622.317 733.745 676.845 776.245 726.126 777.502 749.716 752.856 622.317 733.745" /><polygon class="paint-o" points="749.716 752.856 844.629 737.266 810.5 766.437 749.716 752.856" /><polygon class="paint-v" points="484.854 758.893 441.244 787.059 473.951 793.597 484.854 758.893" /><polygon class="paint-v" points="844.629 737.266 895.822 769.455 886.916 785.801 844.629 737.266" /></g>
+                            <polygon id="PaintImgLight" class="paint-w" points="685.2,244.7 1.9,349.8 1.9,89.7 685.2,194.7"></polygon><linearGradient id="Paint-w" gradientUnits="userSpaceOnUse" x1="0.863" y1="637.276" x2="684.204" y2="637.276" gradientTransform="matrix(1 0 0 -1 0 857)"><stop offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/><stop offset="1" style="stop-color:#FFFFFF;stop-opacity:1"/></linearGradient>
+                        </svg>
+
+                        <!-- PaintPointer ---------------------------------------- -->
+                        <div class="paint-pointer-ls __tran200ms">
+                            <button id="PaintPointer01" class="paint-pointer-li __sha8px __rad50per --click" data-color-class="paint-c"
+                                data-color-name="天空" data-color-reset="#b292d2" data-color-save="#b292d2"
+                                data-color-set="#b292d2" aria-label="調色01"></button>
+                            <button id="PaintPointer02" class="paint-pointer-li __sha8px __rad50per" data-color-class="paint-a"
+                                data-color-name="海洋" data-color-reset="#1e97a8" data-color-save="#1e97a8"
+                                data-color-set="#1e97a8" aria-label="調色02"></button>
+                            <button id="PaintPointer03" class="paint-pointer-li __sha8px __rad50per" data-color-class="paint-d"
+                                data-color-name="沙岸" data-color-reset="#c38e32" data-color-save="#c38e32"
+                                data-color-set="#c38e32" aria-label="調色03"></button>
+                            <button id="PaintPointer04" class="paint-pointer-li __sha8px __rad50per" data-color-class="paint-e"
+                                data-color-name="雲朵" data-color-reset="#d7cde2" data-color-save="#d7cde2"
+                                data-color-set="#d7cde2" aria-label="調色04"></button>
+                            <button id="PaintPointer05" class="paint-pointer-li __sha8px __rad50per" data-color-class="paint-f"
+                                data-color-name="探照燈" data-color-reset="#efe628" data-color-save="#efe628"
+                                data-color-set="#efe628" aria-label="調色05"></button>
+                            <button id="PaintPointer06" class="paint-pointer-li __sha8px __rad50per" data-color-class="paint-j"
+                                data-color-name="燈塔條紋一" data-color-reset="#f6f6f7" data-color-save="#f6f6f7"
+                                data-color-set="#f6f6f7" aria-label="調色06"></button>
+                            <button id="PaintPointer07" class="paint-pointer-li __sha8px __rad50per" data-color-class="paint-h"
+                                data-color-name="燈塔頂部" data-color-reset="#083a8a" data-color-save="#083a8a"
+                                data-color-set="#083a8a" aria-label="調色07"></button>
+                            <button id="PaintPointer08" class="paint-pointer-li __sha8px __rad50per" data-color-class="paint-i"
+                                data-color-name="燈塔條紋二" data-color-reset="#be1615" data-color-save="#be1615"
+                                data-color-set="#be1615" aria-label="調色08"></button>
+                            <button id="PaintPointer09" class="paint-pointer-li __sha8px __rad50per" data-color-class="paint-k"
+                                data-color-name="門窗" data-color-reset="#3a5064" data-color-save="#3a5064"
+                                data-color-set="#3a5064" aria-label="調色09"></button>
+                            <button id="PaintPointer10" class="paint-pointer-li __sha8px __rad50per" data-color-class="paint-m"
+                                data-color-name="石頭" data-color-reset="#817763" data-color-save="#817763"
+                                data-color-set="#817763" aria-label="調色10"></button>
+                        </div>
+
+                        <!-- PaintLibrary ---------------------------------------- -->
+                        <button id="PaintLibrary" class="paint-library-btn __rad60px __sha4px __tran100ms" aria-label="別人的設計">
+                            <i class="fas fa-images"></i>
+                            圖庫
+                        </button>
+
+                        <!-- PaintCanvas ---------------------------------------- -->
+                        <canvas id="PaintCanvas" class="__sha16px"></canvas>
+                    </div>
+
+                    <!-- PaintBtns ---------------------------------------- -->
+                    <nav class="paint-toolbar">
+                        <div class="paint-btn-ls paint-btn-preview __tran200ms">
+                            <button class="paint-btn-li paint-btn-solid __rad4px __tran100ms" id="PaintUpload" aria-label="儲存">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                上傳
+                            </button>
+                            <button class="paint-btn-li paint-btn-solid __rad4px __tran100ms" id="PaintDownload" aria-label="下載">
+                                <i class="fas fa-download"></i>
+                                下載
+                            </button>
+                            <button class="paint-btn-li paint-btn-solid __rad4px __tran100ms" id="PaintEdit" aria-label="編輯">
+                                <i class="fas fa-edit"></i>
+                                編輯
+                            </button>
+                        </div>
+                        <div class="paint-btn-ls paint-btn-edit __tran200ms">
+                            <button class="paint-btn-li paint-btn-empty __rad4px __tran100ms" id="PaintReset" aria-label="重設">
+                                <i class="fas fa-undo-alt"></i>
+                                重設
+                            </button>
+                            <button class="paint-btn-li paint-btn-empty __rad4px __tran100ms" id="PaintCancel" aria-label="取消">
+                                <i class="fas fa-times-circle"></i>
+                                取消
+                            </button>
+                            <button class="paint-btn-li paint-btn-solid __rad4px __tran100ms" id="PaintApply" aria-label="確定">
+                                <i class="fas fa-check-circle"></i>
+                                確定
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- PaintBody ---------------------------------------- -->
+                <div id="PaintBody" class="paint-body __rad12px --palette">
+
+                    <!-- PaintName ---------------------------------------- -->
+                    <div class="paint-name">
+                        <i class="fas fa-palette"></i>
+                        <span id=PaintName></span>
+                    </div>
+
+                    <!-- PaintModel ( Mobile ) ---------------------------------------- -->
+                    <div class="paint-model">
+                        <button id="PaintPalette" class="paint-model-btn __rad4px">調色盤</button>
+                        <button id="PaintColorcode" class="paint-model-btn __rad4px">色碼表</button>
+                    </div>
+                    <div class="paint-option">
+
+                        <!-- PaintPicker ---------------------------------------- -->
+                        <div class="paint-picker" id="PaintPicker"></div>
+
+                        <!-- PaintInputs ---------------------------------------- -->
+                        <ul class="paint-input-ls">
+                            <li class="paint-input-li __rad4px">
+                                <label for="PaintHex" class="paint-input-span">#</label>
+                                <input type="text" name="PaintHex" id="PaintHex" class="paint-input-text" maxlength="6">
+                            </li>
+                            <li class="paint-input-li __rad4px">
+                                <label for="PaintR" class="paint-input-span">R:</label>
+                                <input type="text" name="r" kind="rgb" id="PaintR" class="paint-input-num" maxlength="3" min="0" max="255">
+                            </li>
+                            <li class="paint-input-li __rad4px">
+                                <label for="PaintG" class="paint-input-span">G:</label>
+                                <input type="text" name="g" kind="rgb" id="PaintG" class="paint-input-num" maxlength="3" min="0" max="255">
+                            </li>
+                            <li class="paint-input-li __rad4px">
+                                <label for="PaintB" class="paint-input-span">B:</label>
+                                <input type="text" name="b" kind="rgb" id="PaintB" class="paint-input-num" maxlength="3" min="0" max="255">
+                            </li>
+                            <li class="paint-input-li __rad4px">
+                                <label for="PaintH" class="paint-input-span">H:</label>
+                                <input type="text" name="h" kind="hsv" id="PaintH" class="paint-input-num" maxlength="3" min="0" max="360">
+                                <span class="paint-input-span">°</span>
+                            </li>
+                            <li class="paint-input-li __rad4px">
+                                <label for="PaintS" class="paint-input-span">S:</label>
+                                <input type="text" name="s" kind="hsv" id="PaintS" class="paint-input-num" maxlength="3" min="0" max="100">
+                                <span class="paint-input-span">%</span>
+                            </li>
+                            <li class="paint-input-li __rad4px">
+                                <label for="PaintL" class="paint-input-span">L:</label>
+                                <input type="text" name="v" kind="hsv" id="PaintL" class="paint-input-num" maxlength="3" min="0" max="100">
+                                <span class="paint-input-span">%</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="paint-foot">
+
+                    <!-- MsgNamed ---------------------------------------- -->
+                    <div id="MsgNamed" class="__cover __tran200ms">
+                        <div class="paint-msg-box __rad16px">
+                            <div class="paint-msg-head">
+                                <span class="paint-msg-title">
+                                    <i class="fas fa-user"></i>
+                                    取個名稱
+                                </span>
+                                <input id="InputName" class="__rad4px" type="text" placeholder="請輸入 4~20 字元" value="">
+                                <span id="InputWarn"></span>
+                            </div>
+                            <div class="paint-msg-body">
+                                <button id="BtnCancel" class="paint-msg-btn __rad4px __tran100ms" aria-label="取消">取消</button>
+                                <button id="BtnSend" class="paint-msg-btn __rad4px __tran100ms" aria-label="送出設定">送出</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MsgSuccess ---------------------------------------- -->
+                    <div id="MsgSuccess" class="__cover __tran200ms">
+                        <div class="paint-msg-box __rad16px">
+                            <div class="paint-msg-head">
+                                <span class="paint-msg-title">
+                                    <i class="fas fa-check-circle"></i>
+                                    成功
+                                </span>
+                                <span class="paint-msg-desc">已上傳此次設定！</span>
+                            </div>
+                            <div class="paint-msg-body">
+                                <button id="BtnSuccess" class="paint-msg-btn __rad4px __tran100ms" aria-label="成功上傳">ＯＫ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MsgError ---------------------------------------- -->
+                    <div id="MsgError" class="__cover __tran200ms">
+                        <div class="paint-msg-box __rad16px">
+                            <div class="paint-msg-head">
+                                <span class="paint-msg-title">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    失敗
+                                </span>
+                                <span class="paint-msg-desc">伺服器未回應...</span>
+                            </div>
+                            <div class="paint-msg-body">
+                                <button id="BtnError" class="paint-msg-btn __rad4px __tran100ms" aria-label="取消上傳">關閉</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PaintBlog ---------------------------------------- -->
+                    <div id="PaintBlog" class="__cover __tran200ms">
+                        <div class="paint-blog-box __rad16px">
+                            <div class="paint-blog-head">
+
+                                <!-- PaintSort ---------------------------------------- -->
+                                <div class="paint-blog-option">
+                                    <button aria-label="最多人" value="more" id="PaintMore" class="paint-blog-btn __rad4px __tran100ms --click">最多人</button>
+                                    <button aria-label="最　新" value="new" id="PaintNew" class="paint-blog-btn __rad4px __tran100ms">最　新</button>
+                                </div>
+
+                                <!-- PaintClose ---------------------------------------- -->
+                                <div id="PaintClose" class="paint-blog-close __rad50per __tran100ms">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </div>
+
+                            <!-- PaintList ---------------------------------------- -->
+                            <ul id="PaintList" class="__scrbarblack"></ul>
+                            <div id="PaintLoad" class="paint-load __loading">
+                                <img class="__imgresp" width="50" height="50" src="/image/load-dark.svg" alt="Loading">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Base4 ---------------------------------------- -->
+    <div id="Base4" class="base base-col __container">
+        <div class="base-head">
+            <h3 class="base-title">
+                學習進度
+            </h3>
+            <hr class="base-divi">
+            <p class="base-desc">
+                只想寫code，不想寫文案，只想寫code，不想寫文案。<br>
+                只想寫code，不想寫文案，只想寫code，不想寫文案，只想寫code，不想寫文案。
+            </p>
+        </div>
+         <div class="base-body">
+
+            <!-- Skill ---------------------------------------- -->
+            <div class="skill">
+
+                <!-- SkillBtn ---------------------------------------- -->
+                <div class="skill-option __scrbarwhite">
+                    <div id="SkillBtnLs" class="__tran200ms"></div>
+                </div>
+
+                <!-- SkillLs ---------------------------------------- -->
+                <ul id="SkillLs" class="">
+                </ul>
+
+                <div id="SkillLoad" class="__loading --show">
+                    <img class="__imgresp" width="50" height="50" src="/image/load-light.svg" alt="Loading">
+                </div>
+
+                <!-- SkillFull ---------------------------------------- -->
+                <div id="SkillFull" class="__cover __tran200ms">
+                    <div class="skill-full-box __rad16px">
+                        <div id="PiechartFull" class="skill-full-head"></div>
+                        <div class="skill-full-body">
+                            <p id="SkillTitle"></p>
+                            <p id="SkillDesc"></p>
+                        </div>
+                        <div id="SkillClose" class="__rad50per __tran100ms">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer ---------------------------------------- -->
+    <footer class="footer">
+        <span class="footer-head">
+            Copyright 2021 &copy;<a class="footer-link __tran200ms" href="/index.html"><u>Bruce Yu Design</u></a>
+            版權所有
+        </span>
+        <nav class="footer-foot">
+            <ul class="footer-ls">
+                <li class="footer-li">
+                    <a class="footer-btn __tran200ms" href="https://github.com/bruceyu0925/bruceyu0925.github.io" target="_blank"
+                        rel="noreferrer noopener">
+                        <img class="__imgresp" width="40" height="40" src="/image/github.svg" alt="github">
+                        <p class="__hide">github</p>
+                    </a>
+                </li>
+                <li class="footer-li">
+                    <a class="footer-btn __tran200ms" href="https://www.instagram.com/bruceyu_design/" target="_blank"
+                        rel="noreferrer noopener">
+                        <img class="__imgresp" width="40" height="40" src="/image/instagram.svg" alt="instagram">
+                        <p class="__hide">instagram</p>
+                    </a>
+                </li>
+                <li class="footer-li">
+                    <a class="footer-btn __tran200ms" href="mailto:bruceyu0925@gmail.com" target="_blank"
+                        rel="noreferrer noopener">
+                        <img class="__imgresp" width="40" height="40" src="/image/email.svg" alt="email">
+                        <p class="__hide">email</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- BtnTop ---------------------------------------- -->
+    <button id="BtnTop" class="__tran200ms" aria-label="go top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+
+<script src="/js/iro.js"></script>
+<script src="/js/all.js"></script>
+<script src="/js/web_design.js"></script>
+
+</html>

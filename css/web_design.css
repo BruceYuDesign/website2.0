@@ -1,0 +1,1615 @@
+/* Base ---------------------------------------- */
+
+#Banr {
+    background-color: #232743;
+}
+
+.banr-webname {
+    color: #cf6cff;
+}
+
+#Base1 {
+    background-color: #2f3c5e;
+}
+
+#Base2 {
+    background-color: #43577e;
+}
+
+#Base3 {
+    background-color: #2f3c5e;
+}
+
+#Base4 {
+    background-color: #232743;
+}
+
+/* Banr animition ---------------------------------------- */
+
+#BanrImg1 {
+    z-index: 1;
+}
+
+.banr-img-ani {
+    opacity: .95;
+    z-index: 2;
+}
+
+#BanrImg2 {
+    width: 30%;
+    left: 55%;
+    top: 11%;
+    transition-delay: 300ms;
+}
+
+#BanrImg3 {
+    width: 38%;
+    left: 14%;
+    top: 33%;
+    transition-delay: 150ms;
+}
+
+#BanrImg4 {
+    width: 30%;
+    left: 56%;
+    top: 41%;
+}
+
+#BanrImg2.--load {
+    transition-delay: 1200ms;
+}
+
+#BanrImg3.--load {
+    transition-delay: 1350ms;
+}
+
+#BanrImg4.--load {
+    transition-delay: 1500ms;
+}
+
+#BanrImg2.--hide {
+    left: 55%;
+    top: 20%;
+    width: 20%;
+    opacity: 0;
+}
+
+#BanrImg3.--hide {
+    left: 35%;
+    top: 35%;
+    width: 20%;
+    opacity: 0;
+}
+
+#BanrImg4.--hide {
+    left: 55%;
+    top: 40%;
+    width: 23%;
+    opacity: 0;
+}
+
+/* Animate ---------------------------------------- */
+
+.animate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+}
+
+/* AnimateImg ---------------------------------------- */
+
+.animate-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#AnimateImg{
+    width: 100%;
+    height: auto;
+    vertical-align: baseline;
+}
+.ani-rotate{
+    transform-origin: 50% 90%;
+}
+.ani-glow,
+.ani-corona,
+.ani-dawn{
+    opacity:0.15;
+}
+#AnimateImg > .ani-cloud{
+    opacity:0.5;
+    transition-delay: 600ms;
+}
+.ani-glow,
+.ani-corona,
+.ani-dawn,
+.ani-cloud{
+    fill:#fff;
+}
+.ani-star,
+.ani-moon,
+.ani-sun,
+.ani-blur{
+    fill:#fffeeb;
+}
+#AnimateImg *{
+    transition-duration: 500ms;
+    transition-delay: 100ms;
+}
+
+/* --sunrise ---------------------------------------- */
+#AnimateImg.--sunrise > .ani-sky{
+    fill: #edb48c;
+}
+#AnimateImg.--sunrise > .ani-rotate{
+    transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+}
+#AnimateImg.--sunrise > .ani-corona{
+    opacity: 0;
+}
+#AnimateImg.--sunrise > .ani-mount3{
+    fill:#a2938c;
+}
+#AnimateImg.--sunrise > .ani-mount2{
+    fill:#8d6f64;
+}
+#AnimateImg.--sunrise > .ani-mount1{
+    fill:#7d6558;
+}
+#AnimateImg.--sunrise > .ani-glow{
+    opacity: 0;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+#AnimateImg.--sunrise > .ani-moon{
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+}
+#AnimateImg.--sunrise > .ani-star{
+    opacity: 0;
+}
+#AnimateImg.--sunrise > .ani-lake{
+    fill: #f7d5b4;
+}
+#AnimateImg.--sunrise > .ani-dawn{
+    transition-delay: 600ms;
+}
+/* --midday ---------------------------------------- */
+#AnimateImg.--midday > .ani-sky{
+    fill:#bad8f1;
+}
+#AnimateImg.--midday > .ani-mount3{
+    fill:#8cb194;
+}
+#AnimateImg.--midday > .ani-mount2{
+    fill:#639c6a;
+}
+#AnimateImg.--midday > .ani-mount1{
+    fill:#588c66;
+}
+#AnimateImg.--midday > .ani-cloud{
+    transform: translateX(30%);
+    -webkit-transform: translateX(30%);
+    -moz-transform: translateX(30%);
+    -ms-transform: translateX(30%);
+    -o-transform: translateX(30%);
+}
+#AnimateImg.--midday > .ani-dawn{
+    opacity: 0;
+}
+#AnimateImg.--midday > .ani-glow{
+    opacity: 0;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+#AnimateImg.--midday > .ani-star{
+    opacity: 0;
+}
+#AnimateImg.--midday > .ani-lake{
+    fill: #bad8f1;
+}
+#AnimateImg.--midday > .ani-corona{
+    transition-delay: 600ms;
+}
+
+/* --sunset ---------------------------------------- */
+#AnimateImg.--sunset > .ani-sky{
+    fill:#ecbd5e;
+}
+#AnimateImg.--sunset > .ani-rotate{
+    transform: rotate(-55deg);
+    -webkit-transform: rotate(-55deg);
+    -moz-transform: rotate(-55deg);
+    -ms-transform: rotate(-55deg);
+    -o-transform: rotate(-55deg);
+}
+#AnimateImg.--sunset > .ani-dawn,
+#AnimateImg.--sunset > .ani-corona{
+    opacity: 0;
+}
+#AnimateImg.--sunset > .ani-cloud{
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+}
+#AnimateImg.--sunset > .ani-mount3{
+    fill:#948f77;
+}
+#AnimateImg.--sunset > .ani-mount2{
+    fill:#7f7553;
+}
+#AnimateImg.--sunset > .ani-mount1{
+    fill:#6f694a;
+}
+#AnimateImg.--sunset > .ani-star{
+    opacity: 0;
+}
+#AnimateImg.--sunset > .ani-lake{
+    fill: #fae1a4;
+}
+#AnimateImg.--sunset > .ani-glow{
+    transition-delay: 600ms;
+}
+
+/* --night ---------------------------------------- */
+#AnimateImg.--night > .ani-sky{
+    fill: #032340;
+}
+#AnimateImg.--night > .ani-rotate{
+    transform: rotate(-190deg);
+    -webkit-transform: rotate(-190deg);
+    -moz-transform: rotate(-190deg);
+    -ms-transform: rotate(-190deg);
+    -o-transform: rotate(-190deg);
+}
+#AnimateImg.--night > .ani-dawn,
+#AnimateImg.--night > .ani-corona{
+    opacity: 0;
+}
+#AnimateImg.--night > .ani-cloud{
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+}
+#AnimateImg.--night > .ani-mount3{
+    fill:#405155;
+}
+#AnimateImg.--night > .ani-mount2{
+    fill:#313d41;
+}
+#AnimateImg.--night > .ani-mount1{
+    fill:#242c31;
+}
+#AnimateImg.--night > .ani-glow{
+    opacity: 0;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+#AnimateImg.--night > .ani-lake{
+    fill: #344752;
+}
+#AnimateImg.--night > .ani-star{
+    transition-delay: 600ms;
+}
+
+/* AnimateBtn ---------------------------------------- */
+
+.animate-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    position: relative;
+    background-color: rgba(255, 255, 255, .1);
+    height: 40px;
+    width: 300px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+#AnimateThumb,
+.animate-btn{
+    height: 28px;
+    width: 60px;
+}
+
+#AnimateThumb{
+    content: '';
+    display: block;
+    background-color: var(--light);
+    position: absolute;
+    left: 0;
+    margin-left: 12px;
+    z-index: 1;
+}
+
+.animate-btn{
+    background-color: transparent;
+    color: var(--light);
+    font-size: 16px;
+    font-weight: 600;
+    opacity: .5;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.animate-btn:hover,
+.animate-btn.--click{
+    opacity: 1;
+}
+
+.animate-btn.--click{
+    color: var(--shark);
+}
+
+/* Paint ---------------------------------------- */
+
+#Paint {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* PaintHead ---------------------------------------- */
+
+.paint-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 45%
+}
+
+.paint-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#PaintCanvas {
+    position: absolute;
+    box-sizing: content-box;
+    left: -15px;
+    top: -15px;
+    border: 15px solid var(--light);
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 4;
+}
+
+#PaintCanvas.--show {
+    animation: download 750ms linear 250ms 1 forwards;
+    -webkit-animation: download 750ms linear 250ms 1 forwards;
+}
+
+#PaintLibrary {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 15px;
+    opacity: 0;
+    pointer-events: none;
+    background-color: var(--light);
+    color: var(--shark);
+    font-size: 16px;
+}
+
+#PaintLibrary > i {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+#Paint.--edit > .paint-head > .paint-box > #PaintLibrary {
+    opacity: .8;
+    pointer-events: all;
+}
+
+#Paint.--edit > .paint-head > .paint-box > #PaintLibrary:hover {
+    opacity: 1;
+}
+
+@keyframes download {
+    5% {
+        opacity: 1;
+    }
+    15% {
+        transform: scale(.8) rotateZ(15deg);
+        -webkit-transform: scale(.8) rotateZ(15deg);
+        -moz-transform: scale(.8) rotateZ(15deg);
+        -ms-transform: scale(.8) rotateZ(15deg);
+        -o-transform: scale(.8) rotateZ(15deg);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(.8) rotateZ(15deg);
+        -webkit-transform: scale(.8) rotateZ(15deg);
+        -moz-transform: scale(.8) rotateZ(15deg);
+        -ms-transform: scale(.8) rotateZ(15deg);
+        -o-transform: scale(.8) rotateZ(15deg);
+    }
+    100% {
+        transform: scale(.8) rotateZ(15deg) translate(50px, 186.6025px);
+        -webkit-transform: scale(.8) rotateZ(15deg) translate(50px, 186.6025px);
+        -moz-transform: scale(.8) rotateZ(15deg) translate(50px, 186.6025px);
+        -ms-transform: scale(.8) rotateZ(15deg) translate(50px, 186.6025px);
+        -o-transform: scale(.8) rotateZ(15deg) translate(50px, 186.6025px);
+        opacity: 0;
+    }
+}
+
+#PaintImg {
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+
+#PaintImgWave1 {
+    animation: wavetrans1 4s ease-in-out 0s infinite forwards;
+    -webkit-animation: wavetrans1 4s ease-in-out 0s infinite forwards;
+}
+
+#PaintImgWave2 {
+    animation: wavetrans2 4s ease-in-out 0s infinite forwards;
+    -webkit-animation: wavetrans2 4s ease-in-out 0s infinite forwards;
+}
+
+#PaintImgLight {
+    transform-origin: center;
+    animation: lightrorare 8s ease-in-out 0s infinite forwards;
+    -webkit-animation: lightrorare 8s ease-in-out 0s infinite forwards;
+}
+
+@keyframes wavetrans1 {
+    0% {
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
+    40% {
+        transform: translateY(3%);
+        -webkit-transform: translateY(3%);
+        -moz-transform: translateY(3%);
+        -ms-transform: translateY(3%);
+        -o-transform: translateY(3%);
+    }
+    100% {
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
+}
+
+@keyframes wavetrans2 {
+    0% {
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
+    60% {
+        transform: translateY(1.5%);
+        -webkit-transform: translateY(1.5%);
+        -moz-transform: translateY(1.5%);
+        -ms-transform: translateY(1.5%);
+        -o-transform: translateY(1.5%);
+    }
+    100% {
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
+}
+
+@keyframes lightrorare {
+    0% {}
+    20% {
+        transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+    }
+    30% {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+    }
+    70% {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+}
+    80% {
+        transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+    }
+    100% {}
+}
+
+.paint-pointer-ls {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    opacity: 0;
+}
+
+#Paint.--edit > .paint-head > .paint-box > .paint-pointer-ls {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.paint-pointer-li {
+    padding: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    background-color: rgba(255, 255, 255, .3);
+    border: 2px solid rgba(255, 255, 255, .8);
+}
+
+#Paint.--edit > .paint-head > .paint-box > .paint-pointer-ls > .paint-pointer-li {
+    animation: scale 1s linear 0s infinite normal forwards;
+    -webkit-animation: scale 1s linear 0s infinite normal forwards;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+}
+
+#PaintPointer01 {
+    left: 70%;
+    top: 43%;
+}
+
+#PaintPointer02 {
+    left: 22%;
+    top: 75%;
+}
+
+#PaintPointer03 {
+    left: 73%;
+    top: 92%;
+}
+
+#PaintPointer04 {
+    left: 25%;
+    top: 51%;
+}
+
+#PaintPointer05 {
+    left: 48%;
+    top: 24%;
+}
+
+#PaintPointer06 {
+    left: 48%;
+    top: 47%;
+}
+
+#PaintPointer07 {
+    left: 48%;
+    top: 15%;
+}
+
+#PaintPointer08 {
+    left: 48%;
+    top: 59%;
+}
+
+#PaintPointer09 {
+    left: 48%;
+    top: 79%;
+}
+
+#PaintPointer10 {
+    left: 38%;
+    top: 88%;
+}
+
+.paint-pointer-li.--click {
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.paint-pointer-li.--click::before {
+    pointer-events: none;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#Paint.--edit > .paint-head > .paint-box > .paint-pointer-ls > .paint-pointer-li.--click::before {
+    animation: shine 1s ease-out 0s infinite normal forwards;
+    -webkit-animation: shine 1s ease-out 0s infinite normal forwards;
+}
+
+@keyframes shine {
+    0% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        opacity: .9;
+    }
+    100% {
+        transform: scale(4);
+        -webkit-transform: scale(4);
+        -moz-transform: scale(4);
+        -ms-transform: scale(4);
+        -o-transform: scale(4);
+        opacity: 0;
+    }
+}
+
+.paint-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 36px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.paint-btn-ls {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.paint-btn-preview,
+#Paint.--edit > .paint-head > .paint-toolbar > .paint-btn-edit {
+    transition-delay: 200ms;
+    pointer-events: all;
+    opacity: 1;
+}
+
+.paint-btn-edit,
+#Paint.--edit > .paint-head > .paint-toolbar > .paint-btn-preview {
+    transition-delay: 0s;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.paint-btn-li {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--light);
+    font-size: 16px;
+    opacity: .9;
+}
+
+.paint-btn-li > i {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.paint-btn-solid {
+    background-color: var(--light);
+    color: var(--shark);
+}
+
+.paint-btn-empty {
+    background-color: transparent;
+    color: var(--light)
+}
+
+.paint-btn-li:hover {
+    background-color: var(--light);
+    color: var(--shark);
+    opacity: 1;
+}
+
+/* PaintBody ---------------------------------------- */
+
+#PaintBody {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light);
+    padding: 20px 20px 30px;
+    pointer-events: none;
+}
+
+#Paint.--edit > #PaintBody {
+    pointer-events: all;
+}
+
+.paint-name {
+    display: flex;
+    align-items: center;
+    opacity: .6;
+    color: var(--shark);
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#Paint.--edit > #PaintBody > .paint-name {
+    opacity: .8;
+}
+
+.paint-name > i {
+    opacity: .6;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.paint-model {
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+.paint-model-btn {
+    width: 45%;
+    height: 30px;
+    font-size: 16px;
+    background-color: var(--shark);
+    color: var(--light);
+    opacity: .4;
+}
+
+.paint-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    opacity: .8;
+}
+
+#Paint.--edit > #PaintBody > .paint-option {
+    opacity: 1;
+}
+
+.paint-input-ls {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.paint-input-li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #e8e8e8;
+    padding: 2px 10px;
+}
+
+.paint-input-li+.paint-input-li {
+    margin-top: 8px;
+}
+
+.paint-input-text,
+.paint-input-num {
+    letter-spacing: 2px;
+    color: var(--shark);
+    font-size: 18px;
+    font-family: "myfutura";
+    background-color: transparent;
+}
+
+.paint-input-text {
+    text-transform: uppercase;
+    width: 100px;
+    text-align: left;
+}
+
+.paint-input-num {
+    width: 80px;
+    text-align: right;
+}
+
+.paint-input-span {
+    width: 20px;
+    font-size: 16px;
+    display: block;
+    color: var(--shark);
+    font-family: "myfutura";
+    opacity: .9;
+}
+
+/* PaintFoot ---------------------------------------- */
+
+.paint-foot {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 7;
+}
+
+.paint-msg-box {
+    width: 40%;
+    min-width: 360px;
+    height: auto;
+    background-color: var(--light);
+    color: var(--shark);
+    padding: 30px;
+}
+
+.paint-msg-head {
+    display: flex;
+    flex-direction: column;
+}
+
+.paint-msg-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.paint-msg-desc,
+#InputName {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    opacity: .85;
+}
+
+#InputName {
+    padding: 3px 1rem;
+    color: var(--shark);
+    border: 2px solid var(--shark);
+    background-color: transparent;
+}
+
+#InputName:hover {
+    opacity: 1;
+}
+
+#InputWarn {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: var(--warn);
+}
+
+.paint-msg-body {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.paint-msg-btn {
+    background-color: var(--shark);
+    color: var(--light);
+    border: 2px solid var(--shark);
+    font-size: 20px;
+    width: 110px;
+    height: 40px;
+    margin-left: 10px;
+    opacity: .9;
+}
+
+#BtnCancel {
+    background-color: transparent;
+    color: var(--shark);
+}
+
+#BtnCancel:hover,
+.paint-msg-btn:hover {
+    background-color: var(--shark);
+    color: var(--light);
+    opacity: 1;
+}
+
+/* PaintBlog ---------------------------------------- */
+
+.paint-blog-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 70%;
+    height: 80%;
+    background-color: var(--light);
+    color: var(--shark);
+    padding: 30px;
+    overflow: hidden;
+}
+
+.paint-blog-head {
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.paint-blog-option {}
+
+.paint-blog-btn {
+    font-size: 16px;
+    padding: 5px 15px;
+    background-color: var(--shark);
+    color: var(--light);
+    opacity: .4;
+}
+
+.paint-blog-btn:hover {
+    opacity: .5;
+}
+
+.paint-blog-btn.--click {
+    opacity: .9;
+}
+
+.paint-blog-btn+.paint-blog-btn {
+    margin-left: 10px;
+}
+
+#PaintClose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--shark);
+    opacity: .5;
+}
+
+#PaintClose:hover {
+    opacity: .7;
+    background-color: #d6d6d6;
+}
+
+#PaintList {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: auto;
+    padding-top: 20px;
+}
+
+.paint-blog-li {
+    width: 33.3333%;
+    height: auto;
+    padding: 10px;
+    display: none;
+}
+
+.paint-blog-li.--show {
+    display: block;
+}
+
+.paint-blog-block {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.paint-blog-aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--shark);
+    background-color: var(--light);
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.paint-blog-title {
+    font-size: 1.4rem;
+    width: 100%;
+    text-align: center;
+    opacity: .9;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.paint-blog-desc {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    opacity: .7;
+    font-size: .9rem;
+}
+
+.paint-blog-desc > .paint-blog-watch > i {
+    margin-right: 5px;
+}
+
+#PaintLoad {
+    margin-top: 20px;
+}
+
+/* Skill ---------------------------------------- */
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-option {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+#SkillBtnLs {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#SkillBtnLs.--show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.skill-btn-li{
+    position: relative;
+    background-color: transparent;
+    color: var(--light);
+    font-size: 18px;
+    padding: 6px 16px;
+    opacity: .4;
+    font-family: 'myfutura';
+    white-space: nowrap;
+}
+
+.skill-btn-li+.skill-btn-li{
+    margin-left: 16px;
+}
+
+.skill-btn-li::after{
+    content: '';
+    position: absolute;
+    background-color: var(--light);
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition-duration: 200ms;
+}
+
+.skill-btn-li.--click,
+.skill-btn-li:hover{
+    opacity: 1;
+    padding: 4px 16px 8px;
+}
+
+.skill-btn-li.--click.skill-btn-li::after,
+.skill-btn-li:hover.skill-btn-li::after{
+    width: 100%;
+}
+
+/* SkillLs ---------------------------------------- */
+
+#SkillLs{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.skill-li{
+    width: 50%;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    animation: slidein 300ms ease-in 0s forwards;
+    -webkit-animation: slidein 300ms ease-in 0s forwards;
+}
+
+@keyframes slidein{
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+}
+
+.skill-li-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--light);
+    color: var(--shark);
+    width: 100%;
+    height: auto;
+    padding: 15px 30px;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: .95;
+}
+
+.skill-li-box:hover{
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    opacity: 1;
+}
+
+.skill-li-head{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 74%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.skill-li-title{
+    width: 100%;
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-family: 'myfutura';
+    opacity: .9;
+}
+
+.skill-li-desc{
+    width: 100%;
+    font-size: 18px;
+    white-space: nowrap;
+    opacity: .8;
+}
+
+.skill-li-body{
+    width: 23%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-li-body::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    top: 0;
+    background: linear-gradient(to right ,rgba(245, 245, 245, 0),var(--light));
+}
+
+/* Circle ---------------------------------------- */
+
+.circle-text{
+    opacity: .9;
+    font-family: "myfutura";
+    fill: var(--shark);
+    dominant-baseline: central;
+    text-anchor: middle;
+    font-size: 40px;
+}
+
+.circle-bot,
+.circle-top{
+    fill: transparent;
+    stroke-width: 10px;
+}
+
+.circle-bot{
+    stroke: #ddd;
+}
+
+.circle-top{
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+
+/* SkillFull ---------------------------------------- */
+
+.skill-full-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    min-width: 360px;
+    height: auto;
+    background-color: var(--light);
+    color: var(--shark);
+    padding: 30px;
+}
+
+#PiechartFull{
+    width: 25%;
+    margin-bottom: 1rem;
+}
+
+#SkillTitle{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-family: 'myfutura';
+    opacity: .9;
+}
+
+#SkillDesc{
+    width: 100%;
+    font-size: 1.3rem;
+    line-height: 2;
+    opacity: .8;
+}
+
+#SkillClose{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--shark);
+    opacity: .5;
+}
+
+#SkillClose:hover {
+    opacity: .7;
+    background-color: #d6d6d6;
+}
+
+/* RWD ---------------------------------------- */
+
+@media screen and (orientation: portrait) {}
+
+@media screen and (min-width: 1600px) {
+    #PiechartFull{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 1200px) {
+    .skill-li-title{
+        font-size: 22px;
+    }
+    .skill-li-desc{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #Paint{
+        flex-direction: column;
+    }
+    .paint-head {
+        width: 65%
+    }
+    #PaintBody {
+        display: none;
+        margin-top: 20px;
+    }
+    #Paint.--edit > #PaintBody {
+        display: flex;
+    }
+    .paint-blog-box{
+        width: 80%;
+    }
+    .animate{
+        width: 85%;
+    }
+    #SkillLs{
+        width: 97%;
+    }
+    .skill-li{
+        padding: 15px 10px;
+    }
+    .skill-li-box{
+        padding: 10px 20px;
+    }
+    #PiechartFull{
+        width: 30%;
+    }
+}
+
+@media screen and ( max-width: 768px ) {
+    .paint-head {
+        width: 100%
+    }
+    .paint-blog-li{
+        width: 50%;
+    }
+    .paint-blog-title {
+        font-size: 1.2rem;
+    }
+    .paint-blog-desc {
+        font-size: .7rem;
+    }
+    .animate{
+        width: 100%;
+    }
+    .skill-btn-li{
+        font-size: 16px;
+    }
+    .skill-btn-li+.skill-btn-li{
+        margin-left: 12px;
+    }
+    #SkillLs{
+        width: 90%;
+    }
+    .skill-li{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #PaintCanvas {
+        left: -10px;
+        top: -10px;
+        border: 10px solid var(--light);
+    }
+    .paint-pointer-li {
+        height: 14px;
+        width: 14px;
+        border: 2px solid rgba(255, 255, 255, .8);
+    }
+    .paint-blog-box {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+    #SkillTitle{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    #SkillDesc{
+        font-size: 1.1rem;
+        line-height: 2;
+    }
+    #SkillClose{
+        right: 16px;
+        top: 16px;
+    }
+}
+
+@media screen and (max-width: 540px) {}
+
+@media screen and (max-width: 480px) {
+    .paint-model {
+        display: flex;
+    }
+    #PaintBody.--palette > .paint-option > #PaintPicker {
+        display: block;
+    }
+    #PaintBody.--palette > .paint-option > .paint-input-ls {
+        display: none;
+    }
+    #PaintBody.--palette > .paint-model > #PaintPalette {
+        opacity: .9;
+    }
+    #PaintBody.--colorcode > .paint-option > .paint-picker {
+        display: none;
+    }
+    #PaintBody.--colorcode > .paint-option > .paint-input-ls {
+        display: flex;
+    }
+    #PaintBody.--colorcode > .paint-model > #PaintColorcode {
+        opacity: .9;
+    }
+    .paint-input-ls {
+        margin: 0px 25px;
+        width: 150px;
+    }
+    .paint-blog-box {
+        padding: 20px 10px;
+    }
+    .paint-blog-li:last-child{
+        margin-bottom: 70px;
+    }
+    #SkillLs{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 414px) {  
+    #PaintLibrary {
+        padding: 5px 12px;
+        font-size: 14px;
+    }
+    #PaintLibrary > i {
+        font-size: 16px;
+        margin-right: 3px;
+    }
+    .paint-toolbar {
+        width: 280px;
+        height: 32px;
+    }
+    .paint-btn-li {
+        width: 86px;
+        height: 100%;
+        font-size: 14px;
+    }
+    .paint-btn-li > i {
+        font-size: 16px;
+        margin-right: 3px;
+    }
+    .skill-li-title{
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .paint-msg-box {
+        width: 90%;
+        min-width: unset;
+    }
+    .paint-msg-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .paint-msg-desc {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+    .paint-msg-desc > .paint-msg-box > .paint-msg-head > .paint-msg-desc > br {
+        display: none;
+    }
+    .paint-msg-btn {
+        font-size: 18px;
+        width: 90px;
+        height: 40px;
+    }
+    .paint-blog-title {
+        font-size: 1rem;
+    }
+    .paint-blog-aside {
+        padding: 10px;
+    }
+    .skill-li-title{
+        font-size: 18px;
+    }
+    .skill-li-desc{
+        font-size: 14px;
+    }
+    .skill-li-box{
+        padding: 10px;
+    }
+    .skill-full-box {
+        width: 90%;
+        min-width: unset;
+    }
+}
+
+@media screen and (max-width: 360px) {}
+
+@media screen and (max-width: 320px) {}
